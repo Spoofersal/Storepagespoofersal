@@ -49,9 +49,51 @@
       color: #ff5555;
       font-style: italic;
     }
+    .footer {
+      color: #555;
+      font-size: 0.9em;
+      margin-top: 60px;
+    }
+    .contact {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #aaa;
+    }
+    .hidden-section, .locked-box {
+      margin-top: 60px;
+      padding: 30px;
+      background-color: #181818;
+      border: 1px dashed #444;
+      font-style: italic;
+      color: #444;
+    }
+    .locked-box input {
+      background-color: #222;
+      border: none;
+      color: #ccc;
+      padding: 10px;
+      margin-top: 10px;
+      width: 80%;
+    }
+    .ticker {
+      color: #777;
+      font-size: 0.95em;
+      padding: 10px;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      margin-top: 30px;
+    }
+    .ascii {
+      font-family: monospace;
+      color: #555;
+      margin-bottom: 30px;
+    }
   </style>
 </head>
 <body>
+  <div class="ascii">
+    ▁▂▃▄▅▆▇█ spoofersal █▇▆▅▄▃▂▁
+  </div>
   <h1>spoofersal store</h1>
   <p class="subtitle">all sales are final</p>
 
@@ -63,46 +105,79 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td>A-01</td><td>$10</td></tr>
-      <tr><td>A-15</td><td>$11</td></tr>
-      <tr><td>A-33</td><td>$13</td></tr>
-      <tr><td>A-72</td><td>$14</td></tr>
-      <tr><td>B-07</td><td>$15</td></tr>
-      <tr><td>B-19</td><td>$12</td></tr>
-      <tr><td>B-23</td><td>$16</td></tr>
-      <tr><td>B-48</td><td>$13</td></tr>
-      <tr><td>C-04</td><td>$14</td></tr>
-      <tr><td>C-11</td><td>$17</td></tr>
-      <tr><td>C-32</td><td class="sold-out">[SOLD OUT]</td></tr>
-      <tr><td>C-61</td><td>$15</td></tr>
-      <tr><td>D-08</td><td>$18</td></tr>
-      <tr><td>D-29</td><td>$19</td></tr>
-      <tr><td>D-41</td><td>$14</td></tr>
-      <tr><td>D-88</td><td>$16</td></tr>
-      <tr><td>E-02</td><td>$13</td></tr>
-      <tr><td>E-20</td><td>$20</td></tr>
-      <tr><td>E-39</td><td>$12</td></tr>
-      <tr><td>E-50</td><td>$17</td></tr>
-      <tr><td>F-03</td><td>$18</td></tr>
-      <tr><td>F-18</td><td>$14</td></tr>
-      <tr><td>F-44</td><td>$11</td></tr>
-      <tr><td>F-90</td><td class="sold-out">[SOLD OUT]</td></tr>
-      <tr><td>G-10</td><td>$16</td></tr>
-      <tr><td>G-25</td><td>$19</td></tr>
-      <tr><td>G-57</td><td>$13</td></tr>
-      <tr><td>G-83</td><td>$14</td></tr>
-      <tr><td>H-06</td><td>$15</td></tr>
-      <tr><td>H-31</td><td>$10</td></tr>
-      <tr><td>H-78</td><td>$12</td></tr>
-      <tr><td>I-02</td><td>$20</td></tr>
-      <tr><td>I-27</td><td>$14</td></tr>
-      <tr><td>I-55</td><td>$13</td></tr>
-      <tr><td>I-66</td><td class="sold-out">[SOLD OUT]</td></tr>
-      <tr><td>J-12</td><td>$15</td></tr>
-      <tr><td>J-22</td><td>$18</td></tr>
-      <tr><td>J-49</td><td>$11</td></tr>
-      <tr><td>J-99</td><td>$20</td></tr>
+      <tr><td title="archive 3.5MB">A-01</td><td>$10</td></tr>
+      <tr><td title="image pack">A-02</td><td>$11</td></tr>
+      <tr><td title="locked zip">A-03</td><td>$12</td></tr>
+      <tr><td title="pdfs + docs">A-04</td><td>$13</td></tr>
+      <tr><td title="music folder">A-05</td><td>$14</td></tr>
+      <tr><td>A-06</td><td>$15</td></tr>
+      <tr><td>A-07</td><td>$16</td></tr>
+      <tr><td>A-08</td><td class="sold-out">[SOLD OUT]</td></tr>
+      <tr><td>A-09</td><td>$18</td></tr>
+      <tr><td>A-10</td><td>$19</td></tr>
+      <tr><td>B-11</td><td>$20</td></tr>
+      <tr><td>B-12</td><td>$10</td></tr>
+      <tr><td>B-13</td><td>$11</td></tr>
+      <tr><td>B-14</td><td>$12</td></tr>
+      <tr><td>B-15</td><td>$13</td></tr>
+      <tr><td>B-16</td><td class="sold-out">[SOLD OUT]</td></tr>
+      <tr><td>B-17</td><td>$15</td></tr>
+      <tr><td>B-18</td><td>$16</td></tr>
+      <tr><td>B-19</td><td>$17</td></tr>
+      <tr><td>B-20</td><td>$18</td></tr>
+      <tr><td>C-21</td><td>$19</td></tr>
+      <tr><td>C-22</td><td>$20</td></tr>
+      <tr><td>C-23</td><td>$10</td></tr>
+      <tr><td>C-24</td><td>$11</td></tr>
+      <tr><td>C-25</td><td>$12</td></tr>
+      <tr><td>C-26</td><td>$13</td></tr>
+      <tr><td>C-27</td><td>$14</td></tr>
+      <tr><td>C-28</td><td>$15</td></tr>
+      <tr><td>C-29</td><td class="sold-out">[SOLD OUT]</td></tr>
+      <tr><td>C-30</td><td>$17</td></tr>
+      <tr><td>D-31</td><td>$18</td></tr>
+      <tr><td>D-32</td><td>$19</td></tr>
+      <tr><td>D-33</td><td>$20</td></tr>
+      <tr><td>D-34</td><td>$10</td></tr>
+      <tr><td>D-35</td><td>$11</td></tr>
+      <tr><td>D-36</td><td>$12</td></tr>
+      <tr><td>D-37</td><td>$13</td></tr>
+      <tr><td>D-38</td><td>$14</td></tr>
+      <tr><td>D-39</td><td class="sold-out">[SOLD OUT]</td></tr>
+      <tr><td>D-40</td><td>$16</td></tr>
+      <tr><td>E-41</td><td>$17</td></tr>
+      <tr><td>E-42</td><td>$18</td></tr>
+      <tr><td>E-43</td><td>$19</td></tr>
+      <tr><td>E-44</td><td>$20</td></tr>
+      <tr><td>E-45</td><td class="sold-out">[SOLD OUT]</td></tr>
+      <tr><td>E-46</td><td>$10</td></tr>
     </tbody>
   </table>
+
+  <div class="contact">
+    to purchase or unlock access, contact via discord: <strong>@spoofersal</strong>
+  </div>
+
+  <div class="locked-box">
+    🔐 Access Restricted<br />
+    <input type="password" placeholder="Enter key..." disabled /><br />
+    <small>archive vault access requires verification</small>
+  </div>
+
+  <div class="hidden-section">
+    hidden section detected<br />
+    use of credentials required<br />
+    key delivery only via direct contact
+  </div>
+
+  <div class="ticker">
+    <marquee behavior="scroll" direction="left">
+      live drop in 3... 2... | contact @spoofersal | no refunds | max size 50MB | unlock vault early
+    </marquee>
+  </div>
+
+  <div class="footer">
+    last updated: July 15, 2025
+  </div>
 </body>
 </html>
